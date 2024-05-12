@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneBook - Contact Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="top-section">
+        <img src="phonebook-icon.png" alt="Phone Book Icon" class="phonebook-icon">
+        <img src="profile-circle.png" alt="Profile Circle" class="profile-circle">
+        <h1>PhoneBook - Contact Information</h1>
+    </div>
+
+    <div class="navigation-bar">
+        <div class="search-box" style="position: relative;">
+            <input type="text" id="search-input" placeholder="Search...">
+            <ul id="search-results" style="display: none;"></ul>
+            <button>Search</button>
+        </div>
+        <div class="alphabet">
+            <span class="letter">A</span> |
+            <span class="letter">B</span> |
+            <span class="letter">C</span> |
+            <span class="letter">D</span> |
+            <span class="letter">E</span> |
+            <span class="letter">F</span> |
+            <span class="letter">G</span> |
+            <span class="letter">H</span> |
+            <span class="letter">I</span> |
+            <span class="letter">J</span> |
+            <span class="letter">K</span> |
+            <span class="letter">L</span> |
+            <span class="letter">M</span> |
+            <span class="letter">N</span> |
+            <span class="letter">O</span> |
+            <span class="letter">P</span> |
+            <span class="letter">Q</span> |
+            <span class="letter">R</span> |
+            <span class="letter">S</span> |
+            <span class="letter">T</span> |
+            <span class="letter">U</span> |
+            <span class="letter">V</span> |
+            <span class="letter">W</span> |
+            <span class="letter">X</span> |
+            <span class="letter">Y</span> |
+            <span class="letter">Z</span> 
+        </div>
+        <div class="navigation-links">
+            <a href="#">User</a>
+            <a href="#">View all contacts</a>
+            <a href="#">Log out</a>
+        </div>
+    </div>
+    <div class="contact-spiral">
+    </div>
+    <div class="contact-details-container">
+        <table class="contact-details-table">
+            <thead>
+                <tr>
+                    <th>Contact ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Number</th>
+                    <th>Company</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Birthday</th>
+                    <th>User ID</th>
+                </tr>
+            </thead>
+            <tbody id="contact-details-body">
+            </tbody>
+        </table>
+        <div class="buttons">
+            <button id="add-contact-btn">Add Contact</button>
+            <button id="delete-contact-btn">Delete Contact</button>
+            <button id="merge-btn">Merge</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

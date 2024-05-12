@@ -1,0 +1,247 @@
+.top-section {
+    background-color: #add8e6; 
+    padding: 10px;
+    text-align: center;
+}
+
+.separator-line {
+    border-bottom: 2px solid #ccc; 
+}
+
+.navigation-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.phonebook-icon {
+    width: 70px; 
+    height: 60px;
+    margin-right: 10px; 
+    float: left;
+}
+
+.profile-circle {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; 
+    float: right;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive; 
+    font-size: 32px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #333; 
+}
+
+body {
+    background: linear-gradient(to bottom, #467488, #99ced8); 
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:relative;
+    height: 150vh; 
+    overflow:hidden;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+}
+
+.navigation-links:hover {
+    color: rgb(137, 166, 217);
+}
+
+.search-box {
+    display: flex;
+    align-items: flex-end;
+    float: right;
+}
+
+.search-box input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-spiral {
+    display: flex;
+    align-items: center;
+    background-image: url('spiral-book.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100vh;
+    padding: 0; 
+    position: relative;
+}
+
+.contact-details {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Fallback color */
+    border-radius: 10px;
+    padding: 70px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+}
+
+
+h2 {
+    margin: 0 5px 10px; 
+    font-size: 18px;
+    color: #333;
+}
+
+
+.contact-details button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alphabet-navigation {
+    margin: 0 10px; 
+}
+
+.letter {
+    margin: 0 1px; 
+    cursor: pointer;
+}
+
+.letter:hover {
+    color: blue; 
+}
+
+.contact-actions {
+    margin-top: 20px;
+}
+
+.contact-actions button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-actions button:hover { 
+    background-color: #0056b3;
+}
+
+.contact-details-container {
+    position: fixed;
+    top: 50%;
+    left: 45%; 
+    transform: translateY(-50%);
+    width: 50%; 
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    max-height: calc(100vh - 200px); 
+    overflow-y: auto; 
+}
+
+.contact-details-table {
+    width: 100%;
+}
+
+.contact-details-table th,
+.contact-details-table td {
+    padding: 10px;
+    border: 2px solid #ddd;
+    text-align: left;
+    white-space: normal; 
+    overflow:hidden; 
+    font-size: 14px; 
+    width: auto; 
+    word-wrap: break-word;
+}
+
+.contact-details-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.buttons {
+    display: none; 
+    margin: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+} 
+
+#search-results {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: calc(100% - 2px); 
+    background-color: #f5f5f5; 
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0; 
+    margin-top: 5px; 
+}
+
+#search-results li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#search-results li:hover {
+    background-color: #f0f0f0; 
+}
+
+#search-box:focus + #search-results {
+    display: block;
+}
